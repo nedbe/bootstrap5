@@ -1,0 +1,228 @@
+// 字型
+body {
+  font-family: "Noto Sans TC";
+}
+
+// <----- 導覽列 ----->
+// logo大小
+.logo_size {
+  width: 111px;
+  height: 40px;
+}
+
+.navbar {
+  border-bottom: 5px solid $warning;
+}
+
+// 登入視窗上方框線
+.modal-header {
+  border-top: 4px solid $warning;
+}
+
+// 下方字兩旁橫線
+.horizontal_line_login {
+  height: 1px;
+  background-color: #e8e8db;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+// <----- 商品內容 ----->
+// h1樣式
+.h1_style {
+  letter-spacing: 3px;
+  line-height: 47px;
+}
+
+// tooltip 樣式
+.tooltip-inner {
+  background-color: #494846;
+  color: $warning;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 4px 12px;
+}
+
+// 商品圖圓角
+.img_radius {
+  border-radius: 37px;
+}
+
+// 進度條
+.progress {
+  margin-bottom: 20px;
+  .progress-bar {
+    line-height: 16px;
+  }
+}
+
+// icon 右邊距離
+.product_icon {
+  li {
+    margin-right: 25px;
+  }
+}
+
+// 追蹤專案hover
+.btn_custom_hover {
+  &:hover {
+    color: #858377 !important;
+    .fa-heart {
+      color: #ff785e;
+    }
+  }
+}
+
+// 專案募資文字邊框
+.content_style {
+  border-left: 3px solid $warning;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 14px 20px 14px 16px;
+}
+
+// <----- 導覽頁籤 ----->
+.border_1 {
+  // 導覽文字
+  .nav-link {
+    padding: 23px 20px;
+    letter-spacing: 2px;
+    @include sm {
+      padding: 16px;
+    }
+  }
+  // 當前激活樣式
+  .active {
+    font-weight: bold;
+    border-bottom: 2px solid $warning;
+  }
+}
+
+.sticky_sm_top {
+  @include sm {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+
+// <----- 左方區塊 ----->
+// <----- 專案介紹 ----->
+.h2_style + p {
+  text-align: justify;
+  color: $text-color-1;
+}
+
+// 贊助專案文字
+.sponsor_style {
+  display: inline;
+  background-color: #fff;
+  padding: 0px 16px;
+  position: relative;
+  z-index: 100;
+}
+
+// 背景水平線
+.horizontal_line {
+  height: 3px;
+  background-color: $warning;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+// <----- 常見問題 ----->
+#qa {
+  // 陰影
+  .accordion-item {
+    box-shadow: 0 0 8px 0 rgba(73, 72, 70, 0.15);
+    border: 1px solid #e5e5e5;
+  }
+
+  // 標題
+  .accordion_title {
+    background-color: #fff;
+    color: $text-color-1;
+    .qa_num {
+      padding: 5.5px;
+    }
+  }
+
+  // 內容與上方標題對齊
+  .accordion-body {
+    padding-left: 68px;
+    padding-right: 16px;
+  }
+}
+
+// <----- 目前進度 ----->
+// 清除列表預設樣式
+#schedule {
+  li {
+    list-style: none;
+    .card-link {
+      text-decoration: none;
+    }
+  }
+}
+
+// <----- 贊助表格 ----->
+.form-select,
+.form-control {
+  background-color: #f7f7f7;
+}
+
+// 行動版
+#formMobile {
+  label,
+  select,
+  input,
+  .invalid-feedback {
+    @include sm {
+      font-size: 14px !important;
+    }
+  }
+}
+
+// <----- 右方區塊 ----->
+// <----- 事務所 ----->
+// 卡片圓角
+.card {
+  border-radius: 8px;
+}
+
+// 網路icon
+.media_icon {
+  li {
+    border-radius: 100%;
+    i {
+      height: 30px;
+      width: 30px;
+      color: #fff;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+}
+
+// <----- 贊助方案 ----->
+// 徽章樣式背景
+.badge_bg_lightGray {
+  background-color: #e8e8db;
+}
+
+// <----- footer ----->
+footer {
+  height: 88px;
+  background-color: #494846;
+  @include sm {
+    height: 54px;
+  }
+  p {
+    line-height: 88px;
+    @include sm {
+      line-height: 54px;
+    }
+  }
+}

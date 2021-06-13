@@ -1,0 +1,159 @@
+// 共同設定
+$text-color-1: #494846;
+$text-color-2: #373a3c;
+$textFields-color: #999;
+
+$sm-media: 376px;
+
+@mixin sm() {
+  @media all and (max-width: $sm-media) {
+    @content;
+  }
+}
+// <----- 文字相關 ----->
+// 文字顏色
+.text_color_1 {
+  color: $text-color-1;
+}
+
+.text_color_2 {
+  color: $text-color-2;
+}
+
+// 贊助專案表格框內文字顏色
+.textFields_color {
+  color: $textFields-color;
+}
+
+// 文字字型
+.font_baloo {
+  font-family: "Baloo Tamma 2";
+}
+
+// 文字大小
+.font_xs {
+  font-size: 12px;
+}
+
+.font_s {
+  font-size: 14px;
+}
+
+.font_sm_xxs {
+  @include sm {
+    font-size: 12px !important;
+  }
+}
+
+.font_sm_xs {
+  @include sm {
+    font-size: 14px !important;
+  }
+}
+
+.font_sm_s {
+  @include sm {
+    font-size: 16px !important;
+  }
+}
+
+.font_sm_m {
+  @include sm {
+    font-size: 18px !important;
+  }
+}
+
+.font_sm_l {
+  @include sm {
+    font-size: 20px !important;
+  }
+}
+
+.font_sm_xl {
+  @include sm {
+    font-size: 24px !important;
+  }
+}
+
+// 文字間距
+.letter_1 {
+  letter-spacing: 0.7px;
+}
+
+.letter_2 {
+  letter-spacing: 2px;
+}
+
+// 標題樣式
+.h2_style {
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 36px;
+}
+
+.h3_style {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 29px;
+}
+
+// <----- 按鈕相關 ----->
+// 按鈕大小
+.btn_m {
+  padding: 7px 32px;
+}
+
+.btn_l {
+  padding: 10px 38px;
+  @include sm {
+    padding: 8px 20px;
+  }
+}
+
+.btn_xl {
+  padding: 12px 48px;
+  @include sm {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+// hover效果
+.btn-warning:hover {
+  background-color: #ff785e;
+  border-color: #ff785e;
+  color: #fff !important;
+}
+
+.btn-outline-gray:hover {
+  background-color: $warning;
+  border-color: $warning;
+}
+
+// <----- 按鈕相關 ----->
+.badge_style {
+  padding: 5px 16px;
+}
+// <----- 距離相關 ----->
+.mb_l {
+  margin-bottom: 32px;
+}
+
+.pt_m {
+  padding-top: 18px;
+}
+
+.pb_s {
+  padding-bottom: 7px;
+}
+
+// <----- 背景相關 ----->
+// 文字內容背景顏色
+.contentBg_color {
+  background-color: #f8f9fa;
+}
+
+// <----- 框線相關 ----->
+.border_1 {
+  border: 1px solid #e8e8db;
+}
